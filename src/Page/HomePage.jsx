@@ -111,9 +111,11 @@ const HomePage = () => {
 
       <div className="max-w-7xl mx-auto py-10">
 
-        <h1 className="text-5xl font-black text-center text-white">
+        {
+            !start && <h1 className="text-5xl font-black text-center text-white">
           Code2Word
         </h1>
+        }
 
         {!start ? (
           <div className="flex justify-center mt-20">
